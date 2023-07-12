@@ -1,6 +1,6 @@
 import React from "react";
 
-function Name(props) {
+function Name({ firstName, lastName, edu, age, married, children }) {
   let x = 5;
   let y = 4;
 
@@ -15,9 +15,13 @@ function Name(props) {
 
   return (
     <div>
-      Hi welcome {props.name.firstName} {props.name.lastName}
+      {`Hi welcome ${firstName} ${lastName}`}
+      <br />
+      {`studied ${edu[1]}, age is ${age}`}
+      <br />
+      {`married - ${married ? "yes" : "no"}`}
       <p id="demo">{newSum}</p>
-      <button onClick={add}>click me</button>
+      {children}
     </div>
   );
 }
