@@ -1,6 +1,6 @@
 import React from "react";
 
-function Users() {
+const Users = () => {
   fetch("https://jsonplaceholder.typicode.com/todos")
     .then((respons) => respons.json())
     .then((data) => {
@@ -8,6 +8,6 @@ function Users() {
     });
 
   return <></>;
-}
+};
 
 export default Users;

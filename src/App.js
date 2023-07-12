@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./Header";
-import Name from "./Name";
-import Nav from "./Nav";
+import Header from "./components/Header";
+import Name from "./components/Name";
+import Nav from "./components/Nav";
 import car from "./images/car.jfif";
 
 function App() {
