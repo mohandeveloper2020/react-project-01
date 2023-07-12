@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Name from "./components/Name";
 import Nav from "./components/Nav";
+import Users from "./components/Users";
 import car from "./images/car.jfif";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Users /> */}
+      <Users />
       <Name {...name} edu={education} age={age} married={isMarried}>
         <Nav />
       </Name>

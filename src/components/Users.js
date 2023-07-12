@@ -1,8 +1,8 @@
 import React from "react";
 
 const Users = () => {
-  fetch("https://jsonplaceholder.typicode.com/todos")
-    .then((respons) => respons.json())
+  fetch("db.json")
+    .then((response) => response.json())
     .then((data) => {
       console.log(data);
     });
