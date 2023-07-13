@@ -2,7 +2,7 @@ import React from "react";
 
 function Name({ firstName, lastName, edu, age, married, children }) {
   let x = 5;
-  let y = 4;
+  let y = 2;
 
   let add = () => {
     let sum = x + y;

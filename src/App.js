@@ -1,9 +1,9 @@
 import "./App.css";
 import Header from "./components/Header";
 import Name from "./components/Name";
-import Nav from "./components/Nav";
+import Bio from "./components/Bio";
 import Users from "./components/Users";
-import car from "./images/car.jfif";
+import Products from "./components/Products";
 
 function App() {
   let name = {
@@ -19,12 +19,14 @@ function App() {
 
   return (
     <div className="App">
-      <Users />
-      <Name {...name} edu={education} age={age} married={isMarried}>
-        <Nav />
-      </Name>
-      <img src={car} alt={"car"} />
       <Header></Header>
+      <div className="px-5 bg-light">
+        <Name {...name} edu={education} age={age} married={isMarried}>
+          <Bio />
+        </Name>
+        <Users />
+        <Products />
+      </div>
     </div>
   );
 }
