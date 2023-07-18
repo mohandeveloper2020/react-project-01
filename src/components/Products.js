@@ -6,9 +6,9 @@ const Products = () => {
   const items = [
     { id: 1, name: "Maruti", image: carMaruti },
     { id: 2, name: "Tata", image: carTata },
-    { id: 3, name: "Maruti", image: "EC" },
-    { id: 4, name: "Maruti", image: "EC" },
-    { id: 5, name: "Maruti", image: "EC" },
+    { id: 3, name: "Maruti", image: carMaruti },
+    { id: 4, name: "Maruti", image: carMaruti },
+    { id: 5, name: "Maruti", image: carMaruti },
   ];
   return (
     <ul>

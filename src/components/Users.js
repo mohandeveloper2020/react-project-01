@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Users = () => {
+  const [data, setData] = useState();
+
   fetch("db.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      return data;
+      // console.log(data);
     });
 
-  return <></>;
+  return (
+    <>
+      <p>{data}</p>
+    </>
+  );
 };
 
 export default Users;
