@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Users = () => {
-  const [data, setData] = useState();
+  const [data] = useState();
 
   fetch("db.json")
     .then((response) => response.json())
