@@ -37,3 +37,7 @@
   font-size: 0.75rem;
   color: red;
 }
+
+button + button {
+  margin-left: 0.5rem;
+}
