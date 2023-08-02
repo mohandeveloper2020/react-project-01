@@ -51,11 +51,11 @@ const Todos = () => {
       <div className="mb-3">
         <input
           id="userInput"
-          type="number"
+          type="text"
           placeholder="Enter your todo item"
           className="me-2"
           value={userInput}
-          onChange={(e) => console.log(e)}
+          onChange={(e) => setUserInput(e.target.value)}
         />
         <button onClick={() => handleAddData()}>Add item</button>
       </div>
